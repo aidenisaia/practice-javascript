@@ -89,9 +89,9 @@
 # Start with the hash: item_amounts = {chair: 5, table: 2}
 # Someone just bought two chairs. Change the hash such that the chair amount is 3.
 # The final result should be: {chair: 3, table: 2}
-item_amounts = {chair: 5, table: 2}
-item_amounts[:chair] = 3
-p item_amounts
+# item_amounts = {chair: 5, table: 2}
+# item_amounts[:chair] = 3
+# p item_amounts
 
 # Start with the hash: item_amounts = {chair: 5, table: 2}
 # You received 7 desks to sell. Change the hash to include desks.
