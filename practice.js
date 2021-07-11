@@ -10,7 +10,6 @@ function printNumbersDivisibleByThree() {
 }
 printNumbersDivisibleByThree();
 
-
 // // Write a method that accepts an array of strings and prints out every other string.
 function printEveryOtherItem(strings) {
   var index = 0;
@@ -22,7 +21,6 @@ function printEveryOtherItem(strings) {
   });
 }
 printEveryOtherItem(["a", "b", "c", "d", "e"]);
-
 
 // // Write a method that accepts an array of numbers and returns the sum.
 function computeSum(numbers) {
@@ -39,12 +37,10 @@ console.log(computeSum([2, 4, 5]));
 // // The result should be: {chi: 2700000, nyc: 8400000, sf: 800000}
 var cityPopulations = { chi: 2700000 };
 cityPopulations["nyc"] = 8400000;
-cityPopulations.sf = 800000;  // same as cityPopulations["sf"]
+cityPopulations.sf = 800000; // same as cityPopulations["sf"]
 console.log(cityPopulations);
 
-
-
-// Write a method that prints out every number from 1 to 100. 
+// Write a method that prints out every number from 1 to 100.
 var i = 1;
 while (i <= 100) {
   console.log(i);
@@ -62,7 +58,7 @@ while (i <= 100) {
 function fff(array) {
   var amount = 0;
   array.forEach(function (number) {
-    if (number == 55) {
+    if (number === 55) {
       amount++;
     }
   });
@@ -70,9 +66,8 @@ function fff(array) {
 }
 console.log(fff([1, 4, 5, 54, 55, 5, 55, 55, 55]));
 
-// Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string. 
+// Write a method that accepts an array of strings and returns a new array that has the string "awesomesauce" inserted between every string.
 // For example, if the initial array is ["a", "b", "c", "d", "e"], then the returned array should be ["a", "awesomesauce", "b", "awesomesauce", "c", "awesomesauce", "d", "awesomesauce", "e"].
-
 
 // Start with the hash: item_amounts = {chair: 5, table: 2}
 // Someone just bought two chairs. Change the hash such that the chair amount is 3.
@@ -84,10 +79,8 @@ console.log(itemAmounts);
 // You received 7 desks to sell. Change the hash to include desks.
 // The final result should be: {chair: 5, table: 2, desk: 7}
 
-
 // Write a method that accepts a number and returns its factorial.
 // For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
 
-
-// Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array. 
+// Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array.
 // For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: 101, 501, 1001, 105, 505, 1005, 110, 510, 1010].

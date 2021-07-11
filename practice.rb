@@ -104,3 +104,46 @@
 
 # Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array. 
 # For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: 101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
+
+
+# Write a function that takes in an array of numbers and returns its sum.
+
+# def sum(numbers)
+#   total = 0
+#   numbers.each do |x|
+#     total = total + x
+#   end
+#   return total
+# end
+
+# p sum([2,4,6,4,3,6])
+
+
+# Write a function that takes in an array of strings and returns the smallest string.
+
+# def smallest(strings)
+#   current = strings[0]
+#   strings.each do |string|
+#     if string.length < current.length
+#       current = string
+#     end
+#   end
+#     return current
+# end
+
+# p smallest(["tree", "apple", "pot", "tinfoil"])
+
+
+# Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
+
+def reverse(numbers)
+  array = []
+  i = numbers.length - 1
+  while i >= 0
+    array << numbers[i]
+    i -= 1
+  end
+  return array
+end
+
+p reverse([1,2,3,4,5])
