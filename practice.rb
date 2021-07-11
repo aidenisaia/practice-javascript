@@ -136,14 +136,37 @@
 
 # Write a function that takes in an array of numbers and returns a new array with the numbers in reverse order.
 
-def reverse(numbers)
-  array = []
-  i = numbers.length - 1
-  while i >= 0
-    array << numbers[i]
-    i -= 1
+# def reverse(numbers)
+#   array = []
+#   i = numbers.length - 1
+#   while i >= 0
+#     array << numbers[i]
+#     i -= 1
+#   end
+#   return array
+# end
+
+# p reverse([1,2,3,4,5])
+
+def hourglassSum(arr)
+  hourglasses = []
+  i = 0
+  3.times do
+      r1 = arr[i][i] + arr[i][i+1] + arr[i][i+2]
+      r2 = arr[i+1][i+1]
+      r3 = arr[i+2][i] + arr[i+2][i+1] + arr[i+2][i+2]
+      sum = r1 + r2 + r3
+      hourglasses << sum
+      i += 1
+      p hourglasses
   end
-  return array
+  max = hourglasses[0]
+  hourglasses.each do |number|
+      if number > max
+          max = number
+      end
+  end
+  return max
 end
 
-p reverse([1,2,3,4,5])
+p hourglassSum([[1,2,3,4,5,6],[1,2,3,4,5,6],[1,2,3,4,5,6],[1,2,3,4,5,6],[1,2,3,4,5,6],[1,2,3,4,5,6]])
